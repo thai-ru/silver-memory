@@ -45,4 +45,22 @@ func main() {
 	delete(m, "hello")
 	fmt.Println(m)
 
+	//	Maps as sets
+	intSet := map[int]bool{}
+	vals := []int{1, 2, 3, 4, 5, 6, 3, 3, 6}
+	for _, v := range vals {
+		intSet[v] = true
+	}
+	fmt.Println(intSet)
+	fmt.Println(len(intSet), len(vals))
+	fmt.Println(intSet[5])
+	fmt.Println(intSet[7])
+
+	//Prints if it evaluates to true
+	if intSet[100] {
+		fmt.Println("100 in the set")
+	} else {
+		fmt.Println("100 not in the set")
+	}
+
 }
