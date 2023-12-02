@@ -50,4 +50,15 @@ func main() {
 	fmt.Println("g:", g)
 	fmt.Println("h", h)
 
+	//	Multi Dimensional Slices
+	var mds [][]int
+	mds = make([][]int, 10)
+	fmt.Println(mds)
+
+	//	looping over a slice
+	for i := range mds {
+		mds[i] = make([]int, 10)
+		fmt.Println(i)
+	}
+
 }
