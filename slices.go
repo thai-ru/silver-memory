@@ -40,4 +40,14 @@ func main() {
 	y = append(y, 10, 36, 8, 39)
 	fmt.Println(y, len(y), cap(y))
 
+	f := []int{1, 2, 3, 4}
+	g := f[:2]
+	h := f[1:]
+	f[1] = 20
+	g[0] = 10
+	h[1] = 30
+	fmt.Println("f:", f)
+	fmt.Println("g:", g)
+	fmt.Println("h", h)
+
 }
