@@ -43,4 +43,38 @@ func main() {
 		}
 		fmt.Println(y)
 	}
+	//	d). for, range loop  --> Only used to loop Go in-built types.(string, arrays, slices and maps)
+	evenVals := []int{2, 4, 6, 8, 10, 12}
+
+	//	i --> Index
+	//  v --> Value
+
+	for i, v := range evenVals {
+		fmt.Println(i, v)
+	}
+
+	// Just print the value without the index using an underscore (_)
+	for _, v := range evenVals {
+		fmt.Println(v)
+	}
+
+	// Looping through a Set.
+	// K --> Key
+
+	uniqueNames := map[string]bool{
+		"fred": true,
+		"raul": true,
+		"aksd": true,
+	}
+	for k := range uniqueNames {
+		fmt.Println(k)
+	}
+
+	//	For-Range is a copy
+	for _, v := range evenVals {
+		// Modifying the value here will not modify the value in the compound type.
+		v *= 2
+		fmt.Println(v)
+	}
+	fmt.Println(evenVals)
 }
