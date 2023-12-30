@@ -6,6 +6,8 @@ import (
 )
 
 // These are functions inside a functions that can access and modify variable in the outer function.
+
+// Passing functions as parameters to functions
 func main() {
 	type Animal struct {
 		FirstName string
