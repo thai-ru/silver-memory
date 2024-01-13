@@ -18,5 +18,12 @@ func main() {
 	var p *int
 	fmt.Println(p)
 	fmt.Println(p == nil) // true
-	fmt.Println(*p)       // panic: runtime error: invalid memory address or nil pointer dereference
+	// fmt.Println(*p)       // panic: runtime error: invalid memory address or nil pointer dereference
+
+	//	Pointer Type
+	q := 10
+	var pointerToQ *int
+	pointerToQ = &q
+	fmt.Println(q)
+	fmt.Println(pointerToQ)
 }
